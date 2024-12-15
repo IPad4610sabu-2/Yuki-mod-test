@@ -30,16 +30,6 @@
 </style>
 </head>
 
-
-
-
-<script>
-window.onload = () => {
-  const adspace = document.querySelector('#adspace');
-  if( adspace.clientHeight === 0 ){
-    alert('アクセスカウンター、または同時接続数が表示されていません。ad blockerをインストールしている場合表示されない場合があります。');
-  }
-}
 </script>
 <body class="no-theme">
     <script src="https://accaii.com/sumikaze/script.js" async></script><noscript><img src="//accaii.com/sumikaze/script?guid=on"></noscript>
@@ -56,26 +46,6 @@ window.onload = () => {
                         </fieldset>
                     </form>
                         
-</div>
-<br><br><h3 class="yukiyoutube">ipad4610</h3>
-           
-            <div id="player-container" class="h-box">
-                <script>
-        function toggleContent() {
-            var hideElement = document.getElementById("hide");
-            var showElement = document.getElementById("show");
-
-            if (hideElement.style.display !== "none") {
-                hideElement.style.display = "none";
-                showElement.style.display = "block";
-            } else {
-                hideElement.style.display = "block";
-                showElement.style.display = "none";
-            }
-        }
-    </script>
-            <div id="hide">
-                <video
   id="player"
   class="video-js vjs-default-skin on-video_player player-style-invidious"
   controls
@@ -99,17 +69,7 @@ window.onload = () => {
                     {% endfor %}
                 </video>
                 </video></div>
-            </div><button onclick="toggleContent()">Video.js/Normal</button>
-            <div class="h-box">
-                <h1>{{ videotitle }}</h1>
-            </div>
-            <div class="pure-g">
-                <div class="pure-u-1 pure-u-lg-1-5">
-                    <a href="{{ videourls[0] }}" target="_blank">ダウンロード</a><br>
-                    <a
-                        href="javascript:{navigator.share({title: '動画を共有',text: '{{videotitle}}',url: location.protocol+'//'+document.domain+'/watch?v={{ videoid }}'+'&t='+Math.floor(document.getElementById('player').currentTime),})}">現時点の動画を共有</a><br>
-                    <a
-                        href="javascript:{navigator.share({title: '動画を共有',text: '{{videotitle}}',url: location.href,})}">動画を共有</a><br>
+
                     <hr>
                 </div>
                 <div class="pure-u-1 pure-u-lg-3-5">
@@ -146,43 +106,7 @@ window.onload = () => {
             </div>
         </div>
     </div>
-    <div class="pure-u-1 pure-u-md-2-24"></div>
-    <script>
-        document.cookie = "yuki=True;max-age=2592000;";
-        function getCookie(name) { let matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)")); return matches ? decodeURIComponent(matches[1]) : undefined; }
-        //document.getElementById("autonext").checked = getCookie("autonext");
-        function checkautoplay(){document.cookie = "autonext="+document.getElementById("autonext").checked+";max-age=2592000;";}
-        document.getElementById("loop").checked = getCookie("loop");
-        document.getElementById("player").loop = document.getElementById("loop").checked;
-        function changeloop(){document.cookie = "autonext="+document.getElementById("loop").checked+";max-age=2592000;";document.getElementById("player").loop = document.getElementById("loop").checked}
-        //function sleep(waitMsec) {var startMsec = new Date();while (new Date() - startMsec < waitMsec);}
-        //function autopage(){if (document.getElementById('autonext').checked) {sleep(5000);document.cookie = "autonext=true;max-age=2592000;";location.href = "/watch?v={{res[0]["id"]}}";}else{document.cookie = "autonext=false;max-age=2592000;";}}
-        function getUrlQueries() { var queryStr = window.location.search.slice(1); queries = {}; queryStr.split('&').forEach(function (queryStr) { var queryArr = queryStr.split('='); queries[queryArr[0]] = queryArr[1]; }); return queries; }
-        if (typeof getUrlQueries().t === "undefined") { t = 0; } else { document.getElementById("player").currentTime = getUrlQueries().t; }
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", "/comments?v=" + getUrlQueries().v);
-        xhr.onload = function () {
-            if (xhr.status != 500) {
-                document.getElementById('comments').innerHTML = xhr.responseText;
-            }
-            else { document.getElementById('comments').innerHTML = "エラーが発生しました。再読み込みを試してください"; }
-        };
-        xhr.send();
-        if (document.domain != "yukigennumber.ddo.jp") { document.getElementById("ads_box").innerHTML = ""; }
-        document.getElementById("player").style.maxHeight = document.documentElement.clientHeight * 0.8 + "px";
-
-        document.onkeydown = keydown;
-        function keydown(key) {
-            var v = document.getElementById("player");
-
-            if (key.keyCode == 32 || key.keyCode == 75) {
-                if (v.paused == true) {
-                    v.play();
-                } else {
-                    v.pause();
-                }
-            }
-        }
+   
     </script>
     <script>$('#searchbox').autocomplete({
             source: function (request, response) {
@@ -216,15 +140,10 @@ document.addEventListener('keydown', function(event) {
     }
   }
 });
+    
 </script>
-
-<div id="adspace">
-<!-- FC2カウンター ここから --><script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=89505886"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=89505886" /></noscript><!-- FC2カウンター ここまで --><!-- FC2カウンター ここから -->
-同時接続数:<script language="javascript" type="text/javascript" src="//counter1.fc2.com/views.php?id=89505886"></script><noscript><img src="//counter1.fc2.com/counter_now.php?id=89505886" /></noscript>  <a href="/instance" >インスタンス一覧</a><a href="/build" >インスタンス作成方法</a><a href="https://scratch.mit.edu/" >　スクラッチでインスタンスの拡散してくれる人募集中,勝手に拡散してOK</a></div>
-<p>このyuki youtubeの”逆アクセスランキング”</p>
-<div style="height:480px;"><script src="//accaii.com/sumikaze/widget.js" async></script></div>
-<script>
-  // Video.jsの初期化
+    
+Video.jsの初期化
   var player = videojs('player');
 
   // 10秒巻き戻しボタンの作成
